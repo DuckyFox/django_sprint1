@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}
+  {{ location }} . {{ date }}
+{% endblock %}
+{% block content %}
+{% include "includes/post_card.html" with full_text=True %}
+{% endblock %}
