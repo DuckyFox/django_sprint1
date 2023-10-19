@@ -1,6 +1,6 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% block title %}
-  {{ location }} . {{ date }}
+  Лента записей
 {% endblock %}
 {% block content %}
 {% include "includes/post_card.html" with full_text=True %}
