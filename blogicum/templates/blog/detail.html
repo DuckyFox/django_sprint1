@@ -3,5 +3,5 @@
   {{ post.location }} . {{ post.date }}
 {% endblock %}
 {% block content %}
-{% include "includes/post_card.html" with full_text=True %}
+  {% include "includes/post_card.html" with is_page_detail=True %}
 {% endblock %}

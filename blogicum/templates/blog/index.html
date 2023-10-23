@@ -8,6 +8,6 @@
   </h1>
   {% for post in posts|dictsortreversed:"id" %}
     <hr>
-    {% include "includes/post_card.html" with full_text=False %}
+    {% include "includes/post_card.html" with is_page_detail=False %}
   {% endfor %}
 {% endblock %}

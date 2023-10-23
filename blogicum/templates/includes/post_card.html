@@ -12,13 +12,13 @@
         {{ post.category }}
       </a></li>
   </ul>
-  {% if full_text %}
+  {% if is_page_detail %}
     <p>{{ post.text }}</p>
   {% else %}
     <p>{{ post.text|truncatewords:10 }}</p>
+    <a href="{% url 'blog:post_detail' post.id %}">
   {% endif %}
-  <a href="{% url 'blog:post_detail' post.id %}">
-    {% if not full_text %}
+    {% if not is_page_detail %}
       Читать полный текст
     {% endif %}
   </a>
